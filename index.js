@@ -9,4 +9,4 @@ co(function*() {
     //md生成器
     let mdg = new mdGenerator(global.processPath);
     yield mdg.go();
-}).then(success => console.log(`==========generate ${path} over=========`), err => console.log('err', err));
+}).then(success => console.log(`success`), err => console.log('err', err));
