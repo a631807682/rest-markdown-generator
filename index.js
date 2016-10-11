@@ -1,10 +1,12 @@
+#!/usr/bin/env node
+
 const mdGenerator = require('./lib/mdGenerate'),
     co = require('co');
 
-let path = process.cwd();
+global.processPath = process.cwd();//命令当前路径
 
 co(function*() {
     //md生成器
-    let mdg = new mdGenerator(path);
+    let mdg = new mdGenerator(global.processPath);
     yield mdg.go();
 }).then(success => console.log(`==========generate ${path} over=========`), err => console.log('err', err));
