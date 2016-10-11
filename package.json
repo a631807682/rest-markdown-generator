@@ -1,0 +1,15 @@
+{
+  "name": "rest-markdown-generator",
+  "version": "0.0.1",
+  "description": "generate README.md from rest api project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cr",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-fs": "^1.2.0"
+  }
+}
